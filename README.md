@@ -1,7 +1,7 @@
 # Meeting Monitor 🎙️
 
 Automatically records Microsoft Teams calls, transcribes them locally with Whisper,
-and emails you a clean bullet-point summary at the end of every day — powered by Claude AI.
+and emails you a clean bullet-point summary at the end of every day — powered by Gemini AI.
 
 ---
 
@@ -18,7 +18,7 @@ Call ends → audio saved as .wav file
        ↓
 At your scheduled time (default 6:00 PM):
   → All recordings transcribed locally with Whisper (no data leaves your machine)
-  → Transcripts sent to Claude API for summarization
+  → Transcripts sent to Gemini API for summarization
   → Summary emailed to you
 ```
 
