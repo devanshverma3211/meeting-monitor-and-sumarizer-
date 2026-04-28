@@ -1,0 +1,27 @@
+{
+  "_comment": "Copy this file to config.json and fill in your values",
+
+  "gemini_api_key": "YOUR_API_KEY_HERE",
+
+  "recordings_dir": "recordings",
+  "audio_device_index": null,
+  "_audio_device_note": "Find your microphone index using sounddevice.query_devices()",
+
+  "whisper_model": "base",
+  "_whisper_model_note": "Options: tiny, base, small, medium, large",
+
+  "summary_time": "18:00",
+  "_summary_time_note": "24-hour HH:MM format",
+
+  "check_interval_seconds": 5,
+  "audio_threshold": 0.008,
+
+  "email": {
+    "smtp_host": "smtp.example.com",
+    "smtp_port": 587,
+    "username": "user@example.com",
+    "password": "your-password-or-app-key",
+    "from_email": "sender@example.com",
+    "to_email": "recipient@example.com"
+  }
+}

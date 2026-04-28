@@ -1,0 +1,6 @@
+psutil
+numpy
+sounddevice
+google-generativeai
+faster-whisper
+schedule
