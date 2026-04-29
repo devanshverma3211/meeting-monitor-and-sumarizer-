@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy this file to config.json and fill in your values",
+
+  "anthropic_api_key": "YOUR_ANTHROPIC_API_KEY_HERE",
+
+  "recordings_dir": "recordings",
+  "audio_device_index": 4,
+
+  "whisper_model": "small",
+  "_whisper_model_note": "Options: tiny (~75MB), base (~145MB), small (~480MB), medium (~1.5GB), large (~3GB). 'small' or 'medium' is recommended for Hinglish.",
+
+  "summary_time": "18:08",
+  "_summary_time_note": "24-hour HH:MM format. The daily summary email is sent at this time.",
+
+  "check_interval_seconds": 5,
+  "_check_interval_note": "How often (in seconds) the app checks whether a Teams call is active.",
+
+  "audio_threshold": 0.001,
+  "_audio_threshold_note": "Microphone RMS level above which audio is considered 'active'. Increase (e.g. 0.015) if you get false positives in a noisy environment.",
+
+  "email": {
+    "smtp_host": "smtp.office365.com",
+    "smtp_port": 587,
+    "username": "your-name@yourcompany.com",
+    "password": "YOUR_OUTLOOK_PASSWORD_OR_APP_PASSWORD",
+    "_password_note": "Use your regular Microsoft 365 password. If your org enforces MFA, ask IT to generate an App Password, or use an SMTP relay instead.",
+    "from_email": "your-name@yourcompany.com",
+    "to_email": "your-name@yourcompany.com"
+  },
+
+  "_smtp_providers": {
+    "gmail":   { "smtp_host": "smtp.gmail.com",       "smtp_port": 587 },
+    "outlook": { "smtp_host": "smtp.office365.com",   "smtp_port": 587 },
+    "yahoo":   { "smtp_host": "smtp.mail.yahoo.com",  "smtp_port": 587 }
+  }
+}
